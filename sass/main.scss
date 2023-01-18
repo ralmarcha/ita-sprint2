@@ -1,7 +1,52 @@
-$primary:#fca311;
-$secondary:#14213d;
+$primary: #5265E1;
+$danger: #FA5959;
+$btn-padding-x: 2rem;
+
+$font-family-sans-serif: 'Rubik', sans-serif;
 
 
+.btn-login:hover {
+    background-color: #fff !important;
+    color: #FA5959 !important;
+}
 
+.btn-login {
+    color: #fff !important;
+    box-shadow: 0 3px 3px rgba(22, 22, 21, 0.237);
+}
+
+.hover-red:hover {
+    color: #FA5959!important;
+}
+
+.blue-background-round {
+    background-color: $primary;
+    width: 100rem;
+    height: 70%;
+    left: 15%;
+    top: 30%;
+    border-radius: 200px 0 0 200px;
+    position: absolute;
+    z-index: -3;
+}
+
+.blue-button{
+ box-shadow: 0 3px 3px rgba(22, 22, 21, 0.237);
+}
+
+.blue-button:hover{
+    background-color: #fff !important;
+    color: #5265e0 !important;
+}
+
+.white-button {
+    box-shadow: 0 3px 3px rgba(22, 22, 21, 0.237);
+}
+
+.white-button:hover {
+   background-color: #fff!important;
+   border-color: black!important;
+   
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap";
