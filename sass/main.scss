@@ -81,5 +81,9 @@ nav-tabs {
     z-index: -3;
     border-radius: 0 200px 200px 0;
   }
- 
+
+  $card-border-color: none;
+  $accordion-icon-color: $primary;
+  $accordion-icon-active-color:#fa5959;
+  
 @import "../node_modules/bootstrap/scss/bootstrap";
