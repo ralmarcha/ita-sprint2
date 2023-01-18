@@ -51,7 +51,7 @@
       </div>
         <div class="row g-4 g-lg-3 text-center text-lg-start col-12 col-md-6 my-4 d-flex flex-column  order-lg-first">
           <h1>A Simple Bookmark Manager</h1>
-          <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+          <p  class="text-muted">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
           <div class="justify-content-start flex-sm-row flex-md-row">
           <button type="button" class="btn btn-primary blue-button">Get it on Chrome</button>
           <button type="button" class="btn btn-light white-button">Get it on Firefox</button>
@@ -60,15 +60,19 @@
        </section>
 
        <!-- features section -->
-      <section class="row g-3 justify-content-center my-5">
-        <div class="col-12 col-md-6 my-4">
+      <section class="row justify-content-center " id="features">
+        <div class="col-12 col-md-6  p-5 text-center">
           <h2>Features</h2>
-          <p>
+          <p class="text-muted">
               Our aim is to make it quick and easy for you to acces your favourite webstites. Your
               bookmarks
               sync between your devices so you can acces them on go.
           </p>
       </div>
+<div class="col-12 pb-5">
+
+
+
       <ul class="nav border-0 nav-tabs flex-column flex-md-row mb-3 mb-5 justify-content-center align-items-center col-12"
                     id="myTab" role="tablist">
                     <li class="nav-item hoverNav" role="presentation">
@@ -105,13 +109,13 @@
                   <div class="col-12 col-lg-6 mt-5 d-flex flex-column justify-content-center text-lg-start">
                       <div>
                           <h2 class="mt-5">Bookmark in one click</h2>
-                          <p>
+                          <p class="text-muted">
                               Organize your bookmarks however you like. Our simple drag-and-drop interface
                               gives
                               you
                               complete control over how you manage your favourite sites.
                           </p>
-                          <button class="btn btn-primary blueBotton">More info</button>
+                          <button class="btn btn-primary blue-button"">More info</button>
                       </div>
                   </div>
               </div>
@@ -130,12 +134,12 @@
                   <div class="col-12 col-lg-6 mt-5 d-flex flex-column justify-content-center text-lg-start">
                       <div>
                           <h2 class="mt-5">Intelligent search</h2>
-                          <p>
+                          <p class="text-muted">
                               Our powerful search feature will help you find saved sites in no time at all. No
                               need to
                               trawl throught all of your bookmarks.
                           </p>
-                          <button class="btn btn-primary blueBotton">More info</button>
+                          <button class="btn btn-primary blue-button"">More info</button>
                       </div>
                   </div>
               </div>
@@ -151,28 +155,153 @@
                               alt="tab-3">
                       </div>
                   </div>
-                  <div class="col-12 col-lg-6 mt-5 d-flex flex-column justify-content-center text-lg-start">
+                  <div class="col-12 col-md-6 mt-5 d-flex flex-column justify-content-center text-lg-start">
                       <div>
                           <h2 class="mt-5">Share your bookmarks</h2>
-                          <p>
+                          <p class="text-muted">
                               Easily share your bookmarks and collections with others. Create a shareable link
                               that you
                               can send at the click of a button.
                           </p>
-                          <button class="btn btn-primary blueBotton">More info</button>
+                          <button class="btn btn-primary blue-button">More info</button>
                       </div>
                   </div>
               </div>
           </div>
       </div>
-  </article>
+    </div>
+ 
 
-
-
-
-       </section>
-
+  <!-- DOWNLOAD EXTENSION -->
+  <section>
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-6 p-5 text-center">
+      <h2>Download the extension</h2>
+      <p class="text-muted">We've got more browsers in the pipeline. Please do let us know if you've got a favourite
+        you'd
+        like us to prioritize.</p>
+    </div>
+  </div>
+</section>
+<!-- CARDS -->
+<section  class="my-4 px-sm-5">
+  <div class="row justify-content-center">
+    <!-- CARD 1 -->
+      <div class="col-12 col-md-auto col-lg-4">
+        <div class="card p-3 align-items-center text-center shadow mb-4 mx-auto w-75"">
+          <img src="./Imagenes/logo-chrome.svg" class="img-fluid card-img-top w-50 p-2" alt="chrome">
+          <div class="card-body">
+            <h5 class="card-title">Add to Chrome</h5>
+            <p class="card-text text-muted pb-3">Minimum version 62</p>
+            <img class="pb-4" src="./Imagenes/bg-dots.svg" alt="dots">
+            <a href="#" class="btn btn-primary blue-button" id="btn-primary">Add & Install Extension</a>
+          </div>
+        </div>
       </div>
+      <!-- CARD 2 -->
+      <div class="col-12 col-md-auto col-lg-4 pt-4">
+        <div class="card p-3 align-items-center text-center shadow mb-4 mx-auto w-75" >
+          <img src="./Imagenes/logo-firefox.svg" class="img-fluid card-img-top w-50 p-2" alt="firefox">
+          <div class="card-body">
+            <h5 class="card-title">Add to Firefox</h5>
+            <p class="card-text text-muted pb-3">Minimum version 55</p>
+            <img class="pb-4" src="./Imagenes/bg-dots.svg" alt="dots">
+            <a href="#" class="btn btn-primary blue-button" id="btn-primary">Add & Install Extension</a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD 3 -->
+      <div class="col-12 col-md-auto col-lg-4 pt-5">
+        <div class="card p-3 align-items-center text-center shadow mb-4 mx-auto w-75" id="card">
+          <img src="./Imagenes/logo-opera.svg" class="img-fluid card-img-top w-50 p-2" alt="opera">
+          <div class="card-body">
+            <h5 class="card-title">Add to Opera</h5>
+            <p class="card-text text-muted pb-3">Minimum version 46</p>
+            <img class="pb-4" src="./Imagenes/bg-dots.svg" alt="dots">
+            <a href="#" class="btn btn-primary blue-button" id="btn-primary">Add & Install Extension</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<!-- FAQS -->
+      <section class="row justify-content-center text-center">
+        <div class="col-12 col-md-6 pt-5">
+          <!-- ACCORDEON -->
+          <div class="accordion accordion-flush p-3" id="accordionFlushExample">
+            <h2>Frequently Asked Questions</h2>
+            <p class="text-muted pb-4">Here are some of our FAQs. If you have any other questions you'd like answered please
+              feel free to
+              email us.</p>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  What is Bookmark?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi excepturi
+                  corrupti enim
+                  commodi? Asperiores nostrum maxime voluptatum iusto nulla, quas molestias sapiente beatae aliquid,
+                  provident, placeat
+                  iure laborum totam reiciendis!</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  How can I request a new browser?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi excepturi
+                  corrupti enim
+                  commodi? Asperiores nostrum maxime voluptatum iusto nulla, quas molestias sapiente beatae aliquid,
+                  provident, placeat
+                  iure laborum totam reiciendis!</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Is there a mobile app?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi excepturi
+                  corrupti enim
+                  commodi? Asperiores nostrum maxime voluptatum iusto nulla, quas molestias sapiente beatae aliquid,
+                  provident, placeat
+                  iure laborum totam reiciendis!</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                  What about other Chromium browsers?
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi excepturi
+                  corrupti enim
+                  commodi? Asperiores nostrum maxime voluptatum iusto nulla, quas molestias sapiente beatae aliquid,
+                  provident, placeat
+                  iure laborum totam reiciendis!</div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-primary m-5" id="btn-primary">More info</a>
+          </div>
+        </div>
+
+      </section>
 
 
 

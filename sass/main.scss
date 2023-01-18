@@ -1,6 +1,6 @@
 $primary: #5265E1;
 $danger: #FA5959;
-$btn-padding-x: 2rem;
+// $btn-padding-x: 2rem;
 
 $font-family-sans-serif: 'Rubik', sans-serif;
 
@@ -57,8 +57,8 @@ nav-tabs {
     border: 0px;
   }
   
-  .nav-tabs {
-    --bs-nav-tabs-border-width: 0px !important;
+ .nav-tabs {
+  --bs-nav-tabs-border-width: 0px !important;
   }
   
   .hoverNav {
