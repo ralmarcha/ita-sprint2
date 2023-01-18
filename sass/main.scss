@@ -5,6 +5,10 @@ $btn-padding-x: 2rem;
 $font-family-sans-serif: 'Rubik', sans-serif;
 
 
+$nav-link-color: black;
+$nav-link-hover-color:#FA5959;
+ 
+
 .btn-login:hover {
     background-color: #fff !important;
     color: #FA5959 !important;
@@ -49,4 +53,33 @@ $font-family-sans-serif: 'Rubik', sans-serif;
    
 }
 
+nav-tabs {
+    border: 0px;
+  }
+  
+  .nav-tabs {
+    --bs-nav-tabs-border-width: 0px !important;
+  }
+  
+  .hoverNav {
+    border: 0px;
+  }
+  
+  .nav-link.active {
+    color: black !important;
+    border-bottom: 4px solid #fa5959 !important;
+    padding-bottom: 12px !important;
+  }
+  
+  .blue-background-round-features {
+    background-color: $primary;
+    width: 100rem;
+    height: 80%;
+    right: 25%;
+    top: 40%;
+    position: absolute;
+    z-index: -3;
+    border-radius: 0 200px 200px 0;
+  }
+ 
 @import "../node_modules/bootstrap/scss/bootstrap";
