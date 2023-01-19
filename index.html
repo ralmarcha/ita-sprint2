@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/main.min.css">
+    <script src="./js/main.js"></script>
+    <script defer src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
     <div class="container-fluid">
       <!--------------- barra de menu -------------->
@@ -18,10 +21,10 @@
         <div class="container m-3">
            <!---------logo -------------->
           <a class="navbar-brand" href="#"><img src="./Imagenes/logo-bookmark.svg" alt="logo" width="" height="24"></a>
-           <!--- boton de menu -------------->
+           <!------ burger menu-------------->
            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
+           </button>
            <!------menu colapsable -------------->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 me-lg-4 mb-lg-0 align-items-center gap-3">
@@ -35,7 +38,7 @@
                 <a class="nav-link hover-red" href="#contact">CONTACT</a>
               </li>
               <li class="nav-item ">
-                <button type="button" class="btn btn-danger shadow-sm btn-login">LOGIN</button>
+              <button type="button" class="btn btn-danger shadow-sm btn-login">LOGIN</button>
               </li>
             </ul>                      
           </div>
@@ -69,31 +72,17 @@
               sync between your devices so you can acces them on go.
           </p>
       </div>
-<div class="col-12 pb-5">
-
-
-
-      <ul class="nav border-0 nav-tabs flex-column flex-md-row mb-3 mb-5 justify-content-center align-items-center col-12"
-                    id="myTab" role="tablist">
-                    <li class="nav-item hoverNav" role="presentation">
-                        <button class="nav-link colorRed active" id="home-tab" data-bs-toggle="tab"
-                            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
-                            aria-selected="true">Simple
-                            Bookmarking</button>
-                    </li>
-                    <li class="nav-item hoverNav" role="presentation">
-                        <button class="nav-link colorRed" id="profile-tab" data-bs-toggle="tab"
-                            data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
-                            aria-selected="false">Speedy
-                            Searching</button>
-                    </li>
-                    <li class="nav-item hoverNav" role="presentation">
-                        <button class="nav-link colorRed" id="contact-tab" data-bs-toggle="tab"
-                            data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
-                            aria-selected="false">Easy
-                            Sharing</button>
-                    </li>
-                </ul>
+      <div class="col-12 pb-5">
+         <ul class="nav border-0 nav-tabs flex-column flex-md-row mb-3 mb-5 justify-content-center align-items-center col-12"  id="myTab" role="tablist">
+            <li class="nav-item hoverNav" role="presentation">
+            <button class="nav-link colorRed active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+             aria-selected="true">Simple Bookmarking</button></li>
+             <li class="nav-item hoverNav" role="presentation">
+              <button class="nav-link colorRed" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+              aria-selected="false">Speedy Searching</button></li>
+             <li class="nav-item hoverNav" role="presentation">
+             <button class="nav-link colorRed" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
+               aria-selected="false">Easy Sharing</button></li></ul>
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
               tabindex="0">
@@ -170,9 +159,7 @@
           </div>
       </div>
     </div>
- 
-
-  <!-- DOWNLOAD EXTENSION -->
+<!-- DOWNLOAD EXTENSION -->
   <section>
   <div class="row justify-content-center">
     <div class="col-12 col-md-6 p-5 text-center">
@@ -302,11 +289,60 @@
         </div>
       </section>
 
-
-
-
-
-    </div>  
+<!----------- FOOTER -------->
+<footer>
+  <div class="container bg-primary text-center text-light">
+        <section class="p-1">
+     
+      <div class="row justify-content-center text-center">
+      
+        <div class="col-12 col-md-5 my-4">
+            <p class="p-3">35,000+ ALREADY JOINED</p>
+            <h2>Stay up-to-date with what we're doing</h2>
+          </p>
+        </div>
+      </div>
+<!--------- contact form ------->
+      <form action="" name="formEmail" class="needs-validation" onsubmit="validate()">
+        <div class="row justify-content-center position-relative my-4">
+          <div class="col-12 col-md-4 form-group ">
+            <input type="email" name="email" id="exampleInputEmail1" class="form-control" placeholder="Enter your email address"
+              required />
+            <div class="invalid-tooltip w-50 mt-">
+              Whoops, make sure it's an email
+            </div>
+          </div>
+        </form>
+        <div class="col-auto" id="submit-btn">
+          <button type="submit" class="btn btn-danger btn-login" id="btn-secondary" onclick="validate()">
+            Contact us
+          </button>
+        </div>
+      </section>
+    </div>
+<!----------- copyright -------------->
+<div class="container-fluid me-0 col-12 text-center bg-navy px-4 px-md-8">  
+  <ul class="nav flex-column flex-md-row py-3">
+    <li class="nav-item">
+      <a class="nav-link text-uppercase pe-2 text-white" href="#">Bookmark</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#features"><small class="text-uppercase pe-2 text-white hover-red">Features</small></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#"><small class="text-uppercase px-2 text-white hover-red">Pricing</small></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#contact"><small class="text-uppercase px-2 text-white hover-red">Contact</small></a>
+    </li>
+    <li class="nav-item ms-md-auto mb-4 my-md-0 pt-md-1">
+        <a href="#"><img src="./Imagenes/icon-facebook.svg" alt=""></a>
+        <a href="#"><img src="./Imagenes/icon-twitter.svg" alt=""></a>
+    </li>
+  </ul> 
+ </div>  
+</footer>
+</div>  
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>

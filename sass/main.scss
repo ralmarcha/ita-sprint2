@@ -1,3 +1,5 @@
+@import "../node_modules/bootstrap/scss/_functions";
+
 $primary: #5265E1;
 $danger: #FA5959;
 // $btn-padding-x: 2rem;
@@ -81,9 +83,24 @@ nav-tabs {
     z-index: -3;
     border-radius: 0 200px 200px 0;
   }
-
+.accordion-button:hover{
+    color: #FA5959 !important;
+}
+$navy: #242A45;
   $card-border-color: none;
   $accordion-icon-color: $primary;
   $accordion-icon-active-color:#fa5959;
+  $accordion-button-active-bg: white;
+  $accordion-button-focus-box-shadow: none;
   
+  
+@import "../node_modules/bootstrap/scss/_variables";
+
+$custom-theme-colors:map-merge($theme-colors, (
+    "navy": $navy
+  ));
+  
+  $theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
+
 @import "../node_modules/bootstrap/scss/bootstrap";
